@@ -1,0 +1,8 @@
+.*.swp
+.git/
+.gitignore
+.gitlab-ci.yaml
+.hadolint.yaml
+.pre-commit-config.yaml
+README.md
+cz.yaml
