@@ -39,7 +39,7 @@ jobs:
           python -m pip install -r requirements-dev.txt
       - name: Set up git identity
         run: |
-          git config --global user.email "ssc@citestuser.com"
+          git config --global user.email "ssc@example.com"
           git config --global user.name "SSC CI Test User"
 
       - name: Set up Windows git configuration
