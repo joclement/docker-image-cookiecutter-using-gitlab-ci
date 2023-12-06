@@ -38,7 +38,6 @@ This cookiecutter accepts the following configuration options:
   services. Defaults to `None` although we strongly advise you to specify it.
 - `project_slug`: This will be the name of the generated directory.By default, it is deduced from the specified remote URL and the given project name.
 - `full_name`: Author name, defaults to `Your Name`
-- `license` adds a license file to the repository. It can be chosen from [MIT](https://opensource.org/licenses/MIT) (default), [BSD-2](https://opensource.org/licenses/BSD-2-Clause), [GPL-3.0](https://opensource.org/licenses/GPL-3.0), [LGPL-3.0](https://opensource.org/licenses/LGPL-3.0) or it can be omitted.
 
 If you are using `docker-image-cookiecutter-using-gitlab-ci` a lot, you can customize your default values
 by providing a `.cookiecutterrc` file in your home directory, for more details see the
