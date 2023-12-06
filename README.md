@@ -5,16 +5,16 @@ set up new projects.
 
 # Features
 
-* Very simple, configurable setup of a fully functional project
-* Based on an established tool: [Cookiecutter](https://github.com/cookiecutter/cookiecutter) has >13k stars on Github!
+- Very simple, configurable setup of a fully functional project
+- Based on an established tool: [Cookiecutter](https://github.com/cookiecutter/cookiecutter) has >13k stars on Github!
 
 # Prerequisites
 
 In order to use Docker Image Cookiecutter using GitLab CI you need the following software installed:
 
-* Python `>= 3.6`
-* [Cookiecutter](https://github.com/cookiecutter/cookiecutter) e.g. by doing `pip install cookiecutter`.
-* Git `>= 1.8.2`
+- Python `>= 3.6`
+- [Cookiecutter](https://github.com/cookiecutter/cookiecutter) e.g. by doing `pip install cookiecutter`.
+- Git `>= 1.8.2`
 
 # Using Docker Image Cookiecutter using GitLab CI
 
@@ -32,13 +32,13 @@ the Git hosting service of your choice and add a new empty repository e.g. [on G
 
 This cookiecutter accepts the following configuration options:
 
-* `project_name`: The human-readable name of the project, defaults to `My C++ Project`
-* `remote_url`: The remote URL for the newly created repository. This is not only used
+- `project_name`: The human-readable name of the project, defaults to `My C++ Project`
+- `remote_url`: The remote URL for the newly created repository. This is not only used
   to add it as a remote to the Git repository, but also to enable integration with some
   services. Defaults to `None` although we strongly advise you to specify it.
-* `project_slug`: This will be the name of the generated directory.By default, it is deduced from the specified remote URL and the given project name.
-* `full_name`: Author name, defaults to `Your Name`
-* `license` adds a license file to the repository. It can be chosen from [MIT](https://opensource.org/licenses/MIT) (default), [BSD-2](https://opensource.org/licenses/BSD-2-Clause), [GPL-3.0](https://opensource.org/licenses/GPL-3.0), [LGPL-3.0](https://opensource.org/licenses/LGPL-3.0) or it can be omitted.
+- `project_slug`: This will be the name of the generated directory.By default, it is deduced from the specified remote URL and the given project name.
+- `full_name`: Author name, defaults to `Your Name`
+- `license` adds a license file to the repository. It can be chosen from [MIT](https://opensource.org/licenses/MIT) (default), [BSD-2](https://opensource.org/licenses/BSD-2-Clause), [GPL-3.0](https://opensource.org/licenses/GPL-3.0), [LGPL-3.0](https://opensource.org/licenses/LGPL-3.0) or it can be omitted.
 
 If you are using `docker-image-cookiecutter-using-gitlab-ci` a lot, you can customize your default values
 by providing a `.cookiecutterrc` file in your home directory, for more details see the

@@ -1,7 +1,7 @@
 {
-    "project_name": "My Project",
-    "remote_url": "None",
-    "project_slug": "{%- if cookiecutter.remote_url == 'None' -%}{{ cookiecutter.project_name|replace('+', 'p')|slugify }}{% else %}{{ cookiecutter.remote_url.split('/')[-1]|replace('.git', '')}}{%- endif -%}",
-    "full_name": "Your Name",
-    "base_docker_image": "docker"
+  "project_name": "My Project",
+  "remote_url": "None",
+  "project_slug": "{%- if cookiecutter.remote_url == 'None' -%}{{ cookiecutter.project_name|replace('+', 'p')|slugify }}{% else %}{{ cookiecutter.remote_url.split('/')[-1]|replace('.git', '')}}{%- endif -%}",
+  "full_name": "Your Name",
+  "base_docker_image": "docker"
 }

@@ -11,10 +11,10 @@ import sys
 from cookiecutter.utils import rmtree
 
 
-
 # A context manager that allows modifying the creation of a Git repository
 class GitRepository(object):
-    """ A context for the setup of a Git repository """
+    """A context for the setup of a Git repository"""
+
     def __init__(self):
         self.remotes = {}
 
@@ -31,7 +31,9 @@ class GitRepository(object):
 
     def add_remote(self, name, url):
         if self.remotes.get(name, url) != url:
-            sys.stderr.write("Trying to add a remote repository twice with differing URL!")
+            sys.stderr.write(
+                "Trying to add a remote repository twice with differing URL!"
+            )
             sys.exit(1)
 
         if name not in self.remotes:
@@ -45,7 +47,10 @@ class GitRepository(object):
         command = command + [url, location]
         subprocess.check_call(command)
         if tag is not None:
-            subprocess.check_call(["git", "checkout", tag], cwd=os.path.join(os.getcwd(), *os.path.split(location)))
+            subprocess.check_call(
+                ["git", "checkout", tag],
+                cwd=os.path.join(os.getcwd(), *os.path.split(location)),
+            )
 
 
 # Optionally remove files whose existence is tied to disabled features
@@ -64,12 +69,18 @@ conditional_remove("{{ cookiecutter.license }}" == "None", "LICENSE.md")
 
 # Finalize the Git setup
 with GitRepository() as repo:
-    if "{{ cookiecutter.remote_url }}"  != "None":
+    if "{{ cookiecutter.remote_url }}" != "None":
         repo.add_remote("origin", "{{ cookiecutter.remote_url }}")
 
 
 # Print a message about success
-print("The project docker-image-cookiecutter-using-gitlab-ci was successfully generated!")
-print("The file FILESTRUCTURE.md describes the purpose and content of all the generated files.")
+print(
+    "The project docker-image-cookiecutter-using-gitlab-ci was successfully generated!"
+)
+print(
+    "The file FILESTRUCTURE.md describes the purpose and content of all the generated files."
+)
 if os.path.exists("TODO.md"):
-    print("A TODO list for you to finalize the generation process was also generated, see TODO.md.")
+    print(
+        "A TODO list for you to finalize the generation process was also generated, see TODO.md."
+    )

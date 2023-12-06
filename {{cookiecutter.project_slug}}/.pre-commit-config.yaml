@@ -14,8 +14,8 @@ repos:
       - id: detect-private-key
       - id: end-of-file-fixer
       - id: file-contents-sorter
-        args: ["--unique"]
-        files: '^\.dockerignore$'
+        args: [--unique]
+        files: ^\.dockerignore$
       - id: mixed-line-ending
       - id: requirements-txt-fixer
       - id: trailing-whitespace
