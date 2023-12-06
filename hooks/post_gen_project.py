@@ -74,9 +74,6 @@ with GitRepository() as repo:
 print(
     "The project docker-image-cookiecutter-using-gitlab-ci was successfully generated!"
 )
-print(
-    "The file FILESTRUCTURE.md describes the purpose and content of all the generated files."
-)
 if os.path.exists("TODO.md"):
     print(
         "A TODO list for you to finalize the generation process was also generated, see TODO.md."
