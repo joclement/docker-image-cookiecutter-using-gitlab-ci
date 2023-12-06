@@ -4,5 +4,5 @@
   "project_slug": "{%- if cookiecutter.remote_url == 'None' -%}{{ cookiecutter.project_name|replace('+', 'p')|slugify }}{% else %}{{ cookiecutter.remote_url.split('/')[-1]|replace('.git', '')}}{%- endif -%}",
   "full_name": "Your Name",
   "email": "Your Email",
-  "base_docker_image": "docker"
+  "base_docker_image": "docker:24.0"
 }
