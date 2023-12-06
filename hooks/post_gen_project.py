@@ -64,9 +64,6 @@ def conditional_remove(condition, path):
             rmtree(path)
 
 
-conditional_remove("{{ cookiecutter.license }}" == "None", "LICENSE.md")
-
-
 # Finalize the Git setup
 with GitRepository() as repo:
     if "{{ cookiecutter.remote_url }}" != "None":
