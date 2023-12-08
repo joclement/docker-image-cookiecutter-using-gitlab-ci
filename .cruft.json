@@ -1,0 +1,16 @@
+{
+  "template": "https://github.com/dokempf/meta-cookiecutter",
+  "commit": "7a3e948cd3138a0a00f8b2f19f6aa936ebdd5836",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "project_name": "Docker Image Cookiecutter using GitLab CI",
+      "project_slug": "docker-image-cookiecutter-using-gitlab-ci",
+      "full_name": "Joris Clement",
+      "github_name": "joclement",
+      "git_setup": "Yes",
+      "_template": "https://github.com/dokempf/meta-cookiecutter"
+    }
+  },
+  "directory": null
+}
