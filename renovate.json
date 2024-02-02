@@ -1,16 +1,28 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["github>renovatebot/.github", ":pinDependencies"],
+  "extends": [
+    "github>renovatebot/.github",
+    ":pinDependencies"
+  ],
   "packageRules": [
     {
       "description": "Use ci semantic type for some deps",
-      "matchFileNames": [".github/workflows/**"],
+      "matchFileNames": [
+        ".github/workflows/**"
+      ],
       "semanticCommitType": "ci"
     },
     {
-      "packageNames": ["*"],
-      "packageFile": ["requirements-dev.txt"],
-      "updateTypes": ["minor", "patch"],
+      "matchPackageNames": [
+        "*"
+      ],
+      "packageFile": [
+        "requirements-dev.txt"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
       "enabled": true
     }
   ]
