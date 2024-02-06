@@ -27,7 +27,7 @@ jobs:
 
     steps:
       - name: Checking out the cookie cutter repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@ee0669bd1cc54295c223e0bb666b733df41de1c5 # v2.7.0
 
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v2
